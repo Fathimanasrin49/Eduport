@@ -1,0 +1,13 @@
+ <option value="">--select--</option>
+ <?php
+ include("../Connection/Connection.php");
+
+    			$select="select * from tbl_place where district_id='".$_GET['did']."'";
+				$res=$Conn->query($select);
+				while($data=$res->fetch_assoc())
+				{
+		?>
+        	<option value="<?php echo $data["place_id"]?>"><?php echo $data["place_name"]?></option>
+            <?php
+				}
+				?>

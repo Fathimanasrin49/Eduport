@@ -1,0 +1,16 @@
+.env
+*.sql
+
+# Operating system files
+.DS_Store
+**/.DS_Store
+
+# Unnecessary downloaded assets
+Assets/Templates/Main/img/logo3_files/
+
+Assets/Files/
+
+# Ignore personal uploads and database credentials
+Assets/Connection/Connection.php
+
+**/_DS_Store
